@@ -464,6 +464,49 @@
 
     .btn-accent:hover { background: var(--accent-dark); }
 
+    /* ── CONTACT ───────────────────────────── */
+    .contact-section {
+      padding: 6.5rem 5vw;
+      background: var(--bg);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+      margin-top: 3rem;
+      max-width: 640px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .contact-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    .contact-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.375rem;
+      font-weight: 400;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-value:hover { color: var(--accent); }
+
+    @media (max-width: 480px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── FOOTER ────────────────────────────── */
     footer {
       background: #111;
@@ -904,6 +947,26 @@
       <div>
         <a href="https://www.alpleisure.com/estepona/luxury-town-house/casa-lucia/" target="_blank" rel="noopener noreferrer" class="btn-accent">Check Availability &amp; Book</a>
         <a href="#gallery" class="btn-light">View Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner">
+      <p class="label">Get in Touch</p>
+      <div class="rule"></div>
+      <h2 class="section-title">Enquiries &amp; <em>Availability</em></h2>
+      <p style="color:var(--text-light);max-width:480px;line-height:1.7;">For questions about the property or to discuss your stay, reach us directly.</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+33695665780" class="contact-value">+33 695 665 780</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:enquiries@alpleisure.com" class="contact-value">enquiries@alpleisure.com</a>
+        </div>
       </div>
     </div>
   </section>
